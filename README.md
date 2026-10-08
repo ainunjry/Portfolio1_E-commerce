@@ -3,6 +3,8 @@
 ### Contents
 
 - [Business understanding](https://github.com/ainunjry/Portfolio1_E-commerce/edit/main/README.md#business-understanding)
+- [About the dataset](https://github.com/ainunjry/Portfolio1_E-commerce/edit/main/README.md#about-the-dataset)
+- 
 ## Customer behavior analysis related to Returns and Churn rate.
 
 ### Business understanding
