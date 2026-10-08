@@ -2,7 +2,7 @@
 
 ### Contents
 
-- [Business understanding](#Business understanding)
+- [Business understanding](https://github.com/ainunjry/Portfolio1_E-commerce/edit/main/README.md#business-understanding)
 ## Customer behavior analysis related to Returns and Churn rate.
 
 ### Business understanding
