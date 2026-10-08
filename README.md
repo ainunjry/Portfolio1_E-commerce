@@ -91,6 +91,7 @@ using the original dataset.
  - e. checking unique values  :
      - ex_data['Customer Name'].nunique()
      - ex_data['Returns'].value_counts()
+       
    
 
 
