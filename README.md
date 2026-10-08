@@ -91,6 +91,7 @@ using the original dataset.
  - e. checking unique values  :
      - ex_data['Customer Name'].nunique()
      - ex_data['Returns'].value_counts()
+       
        ![View result column Returns](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Nmber%20of%20Returns.png)
        
    
