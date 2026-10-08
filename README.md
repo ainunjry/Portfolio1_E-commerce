@@ -33,5 +33,22 @@ The dataset contains the following columns:
 12. Returns: Whether the customer returned any products from the order (binary: 0 for no return, 10 for return).
 13. Churn: A binary column indicating whether the customer has churned (0 for retained, 1 for churned).
 
+#### Data sources
+
+From Kaggle, The dataset used for this analysis is the "ecommerce_customer_data_large.csv".
+This dataset is not included in this repository due to size consideration. Its analysis was performed
+using the original dataset.
+
+### Tools
+
+- Google Colab - Data cleaning and Exploratory data analysis
+  - [Download here :]
+  - (https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/EDA_EXTRACT_1.ipynb)
+- XAMPP PhpMyAdmin - SQL - Data Analysis
+- Tableau - Visualization
+
+### Data Cleaning
+
+
 
 
