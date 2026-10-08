@@ -1,4 +1,8 @@
 # Portfolio1_E-commerce
+
+### Contents
+
+- [Business understanding](#Business understanding)
 ## Customer behavior analysis related to Returns and Churn rate.
 
 ### Business understanding
