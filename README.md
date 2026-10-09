@@ -4,7 +4,11 @@
 
 - [Business understanding](https://github.com/ainunjry/Portfolio1_E-commerce/edit/main/README.md#business-understanding)
 - [About the dataset](https://github.com/ainunjry/Portfolio1_E-commerce/edit/main/README.md#about-the-dataset)
-- 
+- [Data sources](https://github.com/ainunjry/Portfolio1_E-commerce/tree/main#data-sources)
+- [Tools](https://github.com/ainunjry/Portfolio1_E-commerce/tree/main#tools)
+- [Business questions](https://github.com/ainunjry/Portfolio1_E-commerce/tree/main#business-questions)
+- [Customer behavior analysis](https://github.com/ainunjry/Portfolio1_E-commerce/tree/main#customer-behavior-analysis)
+
 ## Customer behavior analysis related to Returns and Churn rate.
 
 ### Business understanding
