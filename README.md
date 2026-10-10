@@ -97,6 +97,12 @@ using the original dataset.
      - ex_data['Returns'].value_counts()
      
        ![View result column Returns](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Nmber%20of%20Returns.png)
+#### Conclusion :
+The dataset has 250.000 rows, 14 columns, column Returns has less 48.000 missing values, some transactions
+appeared had no returned items.
+
+
+              
        
    
 
