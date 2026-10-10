@@ -273,7 +273,10 @@ From  Box Plot Chart visualization for [Total Purchase Amount] columns : No outl
   and Churn-Total Amount Purchase (Pearson : -0.0013 & P_value : 0,512),
   the relationships show no statistically significat level.
   They suggest that Product Price and Total Amount Purchase not linearly associated
-  with Churn in this dataset
+  with Churn in this dataset.
+ 
+
+  
 
   
 
