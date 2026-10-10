@@ -203,7 +203,22 @@ the skewness for both columns are 0, The mean represent typical value of these t
      - 1.IQR, Lower limit & Upper limit of column Quantity are: 2.0, -1.0, 7.0
      - 2.Outliers of column Quantity: Not Found
      - 3.No-outliers of column Quantity : 250000
+   
 
+***Identifying outliers column Quantity***
+- stats(ex_data, 'Quantity')
+  - Output:
+     - 1.IQR, Lower limit & Upper limit of column Quantity are: 2.0, -1.0, 7.0
+     - 2.Outliers of column Quantity: Not Found
+     - 3.No-outliers of column Quantity : 250000
+   
+
+***Identifying outliers column Total Purchase Amounty***
+- stats(ex_data, 'Total Purchase Amount')
+- Output :
+   - 1.IQR, Lower limit & Upper limit of column Total Purchase Amount are: 2499.0, -2272.5, 7723.5
+   - 2.Outliers of column Total Purchase Amount: Not Found
+   - 3.No-outliers of column Total Purchase Amount : 250000
 
 
 
