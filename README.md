@@ -232,8 +232,7 @@ the skewness for both columns are 0, The mean represent typical value of these t
    - plt.ylabel('Amount')
    - plt.show()
 
-      - View Box plot:
-    ![View Box plot](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Box%20Plot.png)
+ ![Box plot](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Box%20Plot.png)
      
 
 
