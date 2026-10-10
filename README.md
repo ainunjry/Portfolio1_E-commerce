@@ -48,7 +48,7 @@ The dataset contains the following columns:
 
 #### Data sources
 
-The dataset used for this analysis is the "ecommerce_customer_data_large.csv" from Kaggle, consisting of 250.000 rows.
+The dataset used for this analysis is the "ecommerce_customer_data_large.csv" from Kaggle.
 This dataset is not included in this repository due to size consideration. Its analysis was performed
 using the original dataset.
 
