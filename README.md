@@ -7,7 +7,7 @@
 - [Data sources](https://github.com/ainunjry/Portfolio1_E-commerce/tree/main#data-sources)
 - [Tools](https://github.com/ainunjry/Portfolio1_E-commerce/tree/main#tools)
 - [Business questions](https://github.com/ainunjry/Portfolio1_E-commerce/tree/main#business-questions)
-- [Data understanding and data cleaning](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#data-understanding-and-data-cleaning)
+- [Data understanding and cleaning](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#data-understanding-and-cleaning)
 - [EDA](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#2-exploratory-data-analysis-eda)
 - [EDA-Outlier](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#identifying-outliers-by-calculating-q1-q3-iqr-and--displaying-data-both-with-outliers-and-no-outliers)
 - [EDA-Correlation](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#correlation)
@@ -75,7 +75,7 @@ using the original dataset.
    12. Does purchasing behavior differ between customer who returns product and those who don't?
    13. Which factors are most  strongly associated with customer churn?
 
-### Data understanding and data cleaning
+### Data understanding and cleaning
 
 ***Python Pandas***
  1. Data Cleaning
