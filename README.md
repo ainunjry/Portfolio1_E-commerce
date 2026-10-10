@@ -124,6 +124,8 @@ appeared had no returned items.
    - plt.title('Quantity Bins')
 
      ![view bar of quantity level](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Level%20quantity.png)
+#### Interpretation:
+From categorical atribute of values, the Low group of Quantity column is The highest frequency, more than 90k.
 
    
 
