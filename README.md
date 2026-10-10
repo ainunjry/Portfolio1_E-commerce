@@ -104,7 +104,7 @@ using the original dataset.
 The dataset has 250.000 rows, 14 columns, column Returns has less 48.000 missing values, some transactions
 appeared had no returned items.
 
-- [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#contents)
+- [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#content)
 
 ### 2. Exploratory Data Analysis (EDA)
    
@@ -280,7 +280,7 @@ From  Box Plot Chart visualization for [Total Purchase Amount] columns : No outl
   They suggest that Product Price and Total Amount Purchase not linearly associated
   with Churn in this dataset.
 
-  - [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#contents)
+  - [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#content)
  
 
   
