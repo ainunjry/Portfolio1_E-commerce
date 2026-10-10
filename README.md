@@ -249,6 +249,32 @@ From  Box Plot Chart visualization for [Total Purchase Amount] columns : No outl
    
        ![Correlation](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Correlation.png)
 
+  By Pearson & P-value.
+  - from scipy import stats
+  - pearson_coef,p_value = stats.pearsonr(ex_data['Churn'],ex_data['Product Price'])
+  - print(f"Pearson_coef : {pearson_coef}")
+  - print(f"p_value : {p_value}")
+
+    - Output:
+    - Pearson_coef : 0.0011813320220758743
+    - p_value : 0.5547460669888156
+
+  - pearson_coef_TP,p_value_TP = stats.pearsonr(ex_data['Total Purchase Amount'],ex_data['Product Price'])
+  - print(f"Pearson_coef_ : {pearson_coef_TP}")
+  - print(f"p_value : {p_value_TP}")
+
+    - Output:
+    - Pearson_coef_ : -0.0012972970953191519
+    - p_value : 0.516567488744543
+   
+  #### Interpretation
+  Product Price and Total Amount Purchase shows with almost neglible linear correlation
+  such as for each: Churn-Price (Pearson : 0.002 & P_value : 0.554),
+  and Churn-Total Amount Purchase (Pearson : -0.0013 & P_value : 0,512),
+  the relationships show no statistically significat level.
+  They suggest that Product Price and Total Amount Purchase not linearly associated
+  with Churn in this dataset
+
   
 
 
