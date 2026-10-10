@@ -87,8 +87,8 @@ using the original dataset.
  - d. checking missing values by creating another DataFrame variable :
      - ex_data = df.copy()
      - def cek(a,b):
-      - hasil = a[b].isnull().sum()
-      - print(f"The Number of isnull column {b}: {hasil}")
+       - hasil = a[b].isnull().sum()
+       - print(f"The Number of isnull column {b}: {hasil}")
 
      - cek(ex_data,'Product Category')
      - cek(ex_data,'Product Price')
@@ -143,11 +143,11 @@ From categorical atribute of values, the Low group of Quantity column is The hig
   
   ***Creating function to analyze statistic***
    - def statistic(c,d):
-   - mean = c[d].mean()
-   - median = c[d].median()
-   - mode = c[d].mode()
-   - skewness = c[d].skew()
-   - print(f"For column {d} : mean={mean}, median={median}, mode={mode}, skewness={skewness}")
+     - mean = c[d].mean()
+     - median = c[d].median()
+     - mode = c[d].mode()
+     - skewness = c[d].skew()
+     - print(f"For column {d} : mean={mean}, median={median}, mode={mode}, skewness={skewness}")
 
    - statistic(ex_data, 'Product Price')
 
@@ -173,6 +173,38 @@ The histogram visualized bell-shaped curve, symmetrical, and the skewness is 0, 
 #### Interpretation:
 The mean and the median  either for Total Purchase Amount or Quantity columns are closed, nearly similar,
 the skewness for both columns are 0, The mean represent typical value of these two columns.
+
+#### **Identifying outliers by Calculating Q1, Q3, IQR, and  displaying data both with outliers and no outliers.**
+
+- def stats(e,f):
+    - Q1 = e[f].quantile(0.25)
+    - Q3 = e[f].quantile(0.75)
+    - IQR = Q3 - Q1
+    - Lower = Q1 - 1.5 * IQR
+    - Upper = Q3 + 1.5 * IQR
+
+
+    - outliers = e[f][(e[f]<Lower)|(e[f]>Upper)]
+    - no_outliers = e[f][(e[f]>=Lower) & (e[f]<=Upper)]
+
+    - print(f"1.IQR, Lower limit & Upper limit of column {f} are: {IQR}, {Lower}, {Upper}")
+
+    - if outliers.empty:
+        - print(f"2.Outliers of column {f}: Not Found")
+    - else:
+        - print(f"2.The Outliers of column {f} : {len(outliers)}")
+
+    - print(f"3.No-outliers of column {f} : {len(no_outliers)}")
+
+
+***Identifying outliers column Product Price***
+- stats(ex_data, 'Product Price')
+  - Output:
+     - 1.IQR, Lower limit & Upper limit of column Quantity are: 2.0, -1.0, 7.0
+     - 2.Outliers of column Quantity: Not Found
+     - 3.No-outliers of column Quantity : 250000
+
+
 
 
 
