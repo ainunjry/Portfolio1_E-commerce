@@ -97,9 +97,33 @@ using the original dataset.
      - ex_data['Returns'].value_counts()
      
        ![View result column Returns](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Nmber%20of%20Returns.png)
-#### Conclusion :
+#### Interpretation :
 The dataset has 250.000 rows, 14 columns, column Returns has less 48.000 missing values, some transactions
 appeared had no returned items.
+
+2. Exploratory Data Analysis
+   
+   ***Creating a categorical atribute which splits the values,a continous data into a specified number groups.***
+   - bin_x = np.linspace(min(ex_data['Quantity']), max(ex_data['Quantity']),5)
+   - bin_x
+   - Output : array([1., 2., 3., 4., 5.])
+  
+   ***Creating group as a label for bin_x variable***
+   - g_name = ['Low', 'Under_rated', 'Medium', 'High']
+   - g_name
+   - Output : ['Low', 'Under_rated', 'Medium', 'High']
+  
+   ***Creating new column to label column of Quantity***
+   - ex_data['Quantity_bin'] = pd.cut(ex_data['Quantity'], bin_x, labels=g_name, include_lowest=True)
+
+   ***To visualize the data range accross the Quantity column.***
+   - plt.figure(figsize=(6,4))
+   - plt.bar(g_name, ex_data['Quantity_bin'].value_counts(),color = 'orange')
+   - plt.xlabel('Level')
+   - plt.ylabel('Amount')
+   - plt.title('Quantity Bins')
+
+   
 
 
               
