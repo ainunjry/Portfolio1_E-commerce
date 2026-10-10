@@ -123,11 +123,22 @@ appeared had no returned items.
    - plt.ylabel('Amount')
    - plt.title('Quantity Bins')
 
-   - view bar of quantity level :
+- view bar of quantity level :
     
      ![view bar of quantity level](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Level%20quantity.png)
 #### Interpretation:
 From categorical atribute of values, the Low group of Quantity column is The highest frequency, more than 90k.
+
+   ***To visualize the distribution of Product price using kdeplot,and Total Purchase Amount***
+   - lt.figure(figsize = (6,4))
+   - sns.kdeplot(data=ex_data, x='Product Price', fill=True, color='grey')
+   - plt.title('KDE distribution of Product Price')
+   - plt.xlabel('Price')
+   - plt.show()
+- View KDE Plot:
+  ![View KDE Plot](
+
+
 
    
 
