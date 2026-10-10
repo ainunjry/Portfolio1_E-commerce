@@ -234,6 +234,9 @@ the skewness for both columns are 0, The mean represent typical value of these t
 
  ![Box plot](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Box%20Plot.png)
      
+#### Interpretation:
+From  Box Plot Chart visualization for [Total Purchase Amount] columns : No outliers found.
+
 
 
 
