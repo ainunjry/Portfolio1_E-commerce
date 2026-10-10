@@ -136,6 +136,7 @@ From categorical atribute of values, the Low group of Quantity column is The hig
    - plt.xlabel('Price')
    - plt.show()
 - View KDE Plot:
+
   ![View KDE Plot](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/KDE%20Plot.png)
 
 
