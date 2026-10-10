@@ -243,10 +243,11 @@ From  Box Plot Chart visualization for [Total Purchase Amount] columns : No outl
 
   ***Finding correlation between columns by Pearson & P-value and common code .corr()***
 
+  Identifying correlation between columns.
   - ex_data[['Product Price','Quantity','Total Purchase Amount']].corr()
      - Output:
    
-       ![Correlation](
+       ![Correlation](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Correlation.png)
 
   
 
