@@ -219,6 +219,22 @@ the skewness for both columns are 0, The mean represent typical value of these t
    - 1.IQR, Lower limit & Upper limit of column Total Purchase Amount are: 2499.0, -2272.5, 7723.5
    - 2.Outliers of column Total Purchase Amount: Not Found
    - 3.No-outliers of column Total Purchase Amount : 250000
+ 
+ #### Interpretation:
+ It apparently seems that 3 columns [Product Price, Quantity, Total Purchase Amount]
+ have no outliers. To ensure them, checking through displaying BOXPLOT chart
+
+
+ ***Displaying Box plot to identify outliers column Total Purchase Amount***
+ 
+   - ex_data['Total Purchase Amount'].plot(kind='box', figsize=(6,4), vert = False, color = 'green')
+   - plt.title('The Box Plot Total Purchase')
+   - plt.ylabel('Amount')
+   - plt.show()
+
+      - View Box plot:
+    [View Box plot](
+     
 
 
 
