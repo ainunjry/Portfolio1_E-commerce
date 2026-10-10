@@ -175,6 +175,7 @@ The mean and the median  either for Total Purchase Amount or Quantity columns ar
 the skewness for both columns are 0, The mean represent typical value of these two columns.
 
 #### **Identifying outliers by Calculating Q1, Q3, IQR, and  displaying data both with outliers and no outliers.**
+---
 
 - def stats(e,f):
     - Q1 = e[f].quantile(0.25)
@@ -236,6 +237,18 @@ the skewness for both columns are 0, The mean represent typical value of these t
      
 #### Interpretation:
 From  Box Plot Chart visualization for [Total Purchase Amount] columns : No outliers found.
+
+  #### **Correlation**
+  ---
+
+  ***Finding correlation between columns by Pearson & P-value and common code .corr()***
+
+  - ex_data[['Product Price','Quantity','Total Purchase Amount']].corr()
+     - Output:
+   
+       ![Correlation](
+
+  
 
 
 
