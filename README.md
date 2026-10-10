@@ -101,7 +101,7 @@ using the original dataset.
 The dataset has 250.000 rows, 14 columns, column Returns has less 48.000 missing values, some transactions
 appeared had no returned items.
 
-2. Exploratory Data Analysis
+### 2. Exploratory Data Analysis (EDA)
    
    ***Creating a categorical atribute which splits the values,a continous data into a specified number groups.***
    - bin_x = np.linspace(min(ex_data['Quantity']), max(ex_data['Quantity']),5)
@@ -139,6 +139,40 @@ From categorical atribute of values, the Low group of Quantity column is The hig
    - View KDE Plot:
 
   ![View KDE Plot](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/KDE%20Plot.png)
+
+  
+  ***Creating function to analyze statistic***
+   - def statistic(c,d):
+   - mean = c[d].mean()
+   - median = c[d].median()
+   - mode = c[d].mode()
+   - skewness = c[d].skew()
+   - print(f"For column {d} : mean={mean}, median={median}, mode={mode}, skewness={skewness}")
+
+   - statistic(ex_data, 'Product Price')
+
+     - Output :
+       For column Product Price : mean=254.742724, median=255.0, mode=0    290
+       Name: Product Price, dtype: int64, skewness=0.0011635058483736365
+#### Interpretation:
+The histogram visualized bell-shaped curve, symmetrical, and the skewness is 0, it means Product Price data distribution is normal, median and mean are relatively closed, mean could be representative of typical value.
+
+  ***To check skewness Total Purchase Amount & Quantity column***
+   - statistic(ex_data, 'Quantity')
+   - print()
+   - statistic(ex_data, 'Total Purchase Amount')
+
+     - Output :
+       For column Quantity : mean=3.004936, median=3.0, mode=0    4
+       Name: Quantity, dtype: int64, skewness=-0.005935270784344358
+
+       For column Total Purchase Amount : mean=2725.385196, median=2725.0, mode=0    2533
+       1    4456
+       Name: Total Purchase Amount, dtype: int64, skewness=-0.00210492340006921
+
+#### Interpretation:
+The mean and the median  either for Total Purchase Amount or Quantity columns are closed, nearly similar,
+the skewness for both columns are 0, The mean represent typical value of these two columns.
 
 
 
