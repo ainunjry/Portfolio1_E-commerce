@@ -123,6 +123,8 @@ appeared had no returned items.
    - plt.ylabel('Amount')
    - plt.title('Quantity Bins')
 
+     ![view bar of quantity level](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Level%20quantity.png)
+
    
 
 
