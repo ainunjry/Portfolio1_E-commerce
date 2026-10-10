@@ -8,6 +8,9 @@
 - [Tools](https://github.com/ainunjry/Portfolio1_E-commerce/tree/main#tools)
 - [Business questions](https://github.com/ainunjry/Portfolio1_E-commerce/tree/main#business-questions)
 - [Customer behavior analysis](https://github.com/ainunjry/Portfolio1_E-commerce/tree/main#customer-behavior-analysis)
+- [EDA](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#2-exploratory-data-analysis-eda)
+- [EDA-Outlier](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#identifying-outliers-by-calculating-q1-q3-iqr-and--displaying-data-both-with-outliers-and-no-outliers)
+- [EDA-Correlation](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#correlation)
 
 ## Customer behavior analysis related to Returns and Churn rate.
 
