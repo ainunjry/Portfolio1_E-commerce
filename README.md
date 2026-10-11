@@ -329,6 +329,7 @@ FROM Percentage
 GROUP BY Product_Category		
 ORDER BY Total_Transactions DESC;
 ```
+**Output query SQL**
   
 
 
