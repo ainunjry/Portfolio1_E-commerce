@@ -500,7 +500,7 @@ Is the payment method related to returns and churn?
 
  - Creating function to analyze payment method related to returns and churn
 
-   ````python
+````python
    def re_ch (b,c):
          percentage = np.round(pd.crosstab(ex_data[b], ex_data[c],normalize='index')* 100,2)
          print(f"Percentage '%' of related {b} to {c}:\n {percentage} ")
@@ -508,6 +508,7 @@ Is the payment method related to returns and churn?
    re_ch('Churn','Payment_Method')
    re_ch('Returns','Payment_Method')
 ````
+
 
 - Output:
 
