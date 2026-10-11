@@ -286,6 +286,52 @@ From  Box Plot Chart visualization for [Total Purchase Amount] columns : No outl
 
 ### `Customer Behavior Analysis`
 
+**Executive summary: A brief paragraph outlining the overall business problem and analysis**
+
+***Business question 1:***
+   -  Which product category has the highest number of purchases?
+- SQL, query:
+  '''sql
+WITH CTE1 AS(		
+SELECT 		
+	 Product_Category, Transaction_ID,	
+     COUNT(DISTINCT Transaction_ID) AS Total_Transactions,		
+     ROUND(AVG(Quantity),2) AS Quantity_On_Average,		
+     MAX(Product_Price) AS Maximum_Price,		
+     COUNT(DISTINCT CASE WHEN Returns = 10 THEN Transaction_ID END) AS The_Return,		
+     COUNT(DISTINCT CASE WHEN Returns = 0 THEN Transaction_ID END) AS Cancel,		
+     COUNT(DISTINCT CASE WHEN Churn = 1 THEN Transaction_ID END) AS Churn,		
+     COUNT(DISTINCT CASE WHEN Churn = 0 THEN Transaction_ID END) AS Retain		
+FROM all_ext		
+GROUP BY Product_Category		
+),		
+Percentage AS(		
+SELECT		
+    Product_Category, Transaction_ID, Total_Transactions,		
+    Quantity_On_Average,		
+    Maximum_Price,		
+    ROUND(100 * The_Return / SUM(Total_Transactions) OVER(),2) AS Return_rate,		
+    ROUND(100 * Cancel / SUM(Total_Transactions) OVER(),2) AS Cancel_Return_rate,		
+    ROUND(100 * Churn / SUM(Total_Transactions) OVER(),2) AS Churn_rate,		
+    ROUND(100 * Churn / SUM(Total_Transactions) OVER(),2) AS Retain_rate		
+FROM CTE1		
+)		
+SELECT 		
+ 		Product_Category, Total_Transactions,
+        Quantity_On_Average,		
+        Maximum_Price,		
+        Return_rate,		
+        Cancel_Return_rate,		
+        Churn_rate,		
+        Retain_rate		
+FROM Percentage		
+GROUP BY Product_Category		
+ORDER BY Total_Transactions DESC;
+'''
+  
+
+
+
 
 
 
