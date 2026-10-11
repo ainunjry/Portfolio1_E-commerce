@@ -336,7 +336,7 @@ ORDER BY Total_Transactions DESC;
 - The highest number of purchases by Product category
 ![The highest number of purchases by Product category](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.1.png)
 
-[Back to Business question No.4](
+[Back to Business question No.4](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#business-question-4)
 
 
   - `Tableau` :
