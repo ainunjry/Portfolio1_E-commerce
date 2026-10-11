@@ -338,6 +338,14 @@ ORDER BY Total_Transactions DESC;
     
 ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Tableau-P%2C1C.png)
 
+***Interpretation***
+Electronics was the main  contributor to transaction volume, with total 62.630  transactions and 170.1 M Purchase amount.
+However the difference was minimal compared with clothing , which recorded 62.581 transactions,  only about 1%  lower.
+Given relatively  similar transaction volumes, this analysis would like look into the Returns and Churn factors,
+should these factors have indicated meaningful differences across categories.
+
+
+
 
 
 
