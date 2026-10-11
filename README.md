@@ -335,7 +335,8 @@ ORDER BY Total_Transactions DESC;
 
 
   - Tableau :
-![](
+    
+![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Tableau-P%2C1C.png)
 
 
 
