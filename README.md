@@ -11,7 +11,7 @@
 - [EDA](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#2-exploratory-data-analysis-eda)
 - [EDA-Outlier](https://github.com/ainunjry/Portfolio1_E-commerce/tree/main#identifying-outliers-by-calculating-q1-q3-iqr-both-with-outliers-and-no-outliers)
 - [EDA-Correlation](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#correlation)
-- [Customer Behavior Analysis-Businees questions No.1-6](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#customer-behavior-analysis)
+- [Customer Behavior Analysis-Businees questions No.1-3](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#customer-behavior-analysis)
 
 ## Customer behavior analysis related to Returns and Churn rate.
 
@@ -343,8 +343,8 @@ ORDER BY Total_Transactions DESC;
 ***Interpretation***
 Electronics was the main  contributor to transaction volume, with total 62.630  transactions and 170.1 M Purchase amount.
 However the difference was minimal compared with clothing , which recorded 62.581 transactions,  only about 1%  lower.
-Given relatively  similar transaction volumes, this analysis would like look into the Returns and Churn factors,
-should these factors have indicated meaningful differences across categories.
+Given relatively  similar transaction volumes, The level of product price and quantity on average for each product 
+category were similar , about $500 and 3.
 
 ***Business question 2:***
    - Are age and gender related to purchase volume and frequency?
@@ -462,6 +462,15 @@ Picture from Business Question 2,  Identifying Size, Mean, Sum columns relations
 ***Interpretation***
 
 Purchase quantity was consistent across genders, both male and female customers averaging 3 items per transactions.
+
+#### 'Returns and Churn rates'
+
+***Business question 4:***
+
+- Which product category has the highest return and churn rates?
+
+
+
 
 
 
