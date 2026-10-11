@@ -293,7 +293,8 @@ From  Box Plot Chart visualization for [Total Purchase Amount] columns : No outl
 ***Business question 1:***
    -  Which product category has the highest number of purchases?
 - `SQL, query:`
-  
+
+#### Query Business questions No. 1 & 4
 ```sql
 WITH CTE1 AS(		
 SELECT 		
