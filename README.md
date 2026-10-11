@@ -1,4 +1,4 @@
-# Portfolio1_E-commerce
+				# Portfolio1_E-commerce
 
 ### Content
 
@@ -498,7 +498,7 @@ Is the payment method related to returns and churn?
 
 **`Pandas`**
 
- - Creating function to analyze product category, gender and payment method related to returns and churn
+ - Creating function to analyze payment method related to returns and churn
 
    ````python
    def re_ch (b,c):
@@ -509,7 +509,10 @@ Is the payment method related to returns and churn?
    re_ch('Returns','Payment_Method')
 ````
 
+- Output:
 
+![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.6.png)
+![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.6B.png)
   
     
 
