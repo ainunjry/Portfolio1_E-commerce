@@ -348,6 +348,8 @@ should these factors have indicated meaningful differences across categories.
 
 ***Business question 2:***
    - Are age and gender related to purchase volume and frequency?
+     
+**`Pandas`**
 
 
 
