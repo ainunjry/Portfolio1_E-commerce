@@ -452,6 +452,7 @@ slightly higher than the other age group,   which recorded approximately  129 - 
 
 
 ***Business question 3:***
+
 What is the average quantity purchased by customers?
 
 Picture from Business Question 2,  Identifying Size, Mean, Sum columns relationship :'Quantity' by Gender.
