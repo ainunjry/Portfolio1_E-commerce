@@ -436,6 +436,9 @@ SELECT Age_Group,
 FROM CTE2					
 GROUP BY Age_Group;					
 ```
+- Output:
+
+![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P%2C2D.png)
 
 
         
