@@ -179,7 +179,7 @@ The histogram visualized bell-shaped curve, symmetrical, and the skewness is 0, 
 The mean and the median  either for Total Purchase Amount or Quantity columns are closed, nearly similar,
 the skewness for both columns are 0, The mean represent typical value of these two columns.
 
-#### **Identifying outliers by Calculating Q1, Q3, IQR, and  displaying data both with outliers and no outliers.**
+#### **Identifying outliers by Calculating Q1, Q3, IQR, both with outliers and no outliers.**
 ---
 
 - def stats(e,f):
