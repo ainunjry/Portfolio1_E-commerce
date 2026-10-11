@@ -387,7 +387,55 @@ should these factors have indicated meaningful differences across categories.
     - relate (ex_data,'Gender','Product_Price','Quantity','Total_Purchase_Amount')
 - Output :
   ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.2C.png)
-  
+
+
+**`SQL, query`**
+
+```sql
+WITH CTE1 AS(					
+    SELECT 					
+        Returns, Churn,	Transaction_ID,	Customer_ID,	
+    		CASE
+    			WHEN Age >= 18 AND Age <= 28 THEN '18 - 28 Years'
+    			WHEN Age >= 29 AND Age <= 39 THEN '29 - 39 Years'
+    		 	WHEN Age >= 40 AND Age <= 50 THEN '40 - 50 Years'
+    			WHEN Age >= 51 AND Age <= 60 THEN '51 - 60 Years'
+    			WHEN Age >= 61 AND Age <= 70 THEN '61 - 70 Years'	
+     			WHEN Age >= 71 THEN 'Above 70 Years'
+        ELSE 'Unknown'
+    		END AS Age_Group,
+    	    COUNT(DISTINCT Transaction_ID)-2 AS Of_Transactions,
+          COUNT(DISTINCT CASE WHEN Returns = 10 THEN Transaction_ID END) AS Of_Returns_Trans,	
+    		  COUNT(DISTINCT CASE WHEN Churn = 1 THEN Transaction_ID END) AS Of_Churn_Trans,
+          COUNT(DISTINCT CASE WHEN Returns = 10 AND Churn = 1 THEN Transaction_ID END) AS Of_Trans_Returns_Churn,				        COUNT(DISTINCT Customer_ID)-1 AS Of_Customers,
+    		  COUNT(DISTINCT CASE WHEN Returns = 10 THEN Customer_ID END) AS Of_Returns_Cust,
+          COUNT(DISTINCT CASE WHEN Churn = 1 THEN Customer_ID END) AS Of_Churn_Cust,			
+          COUNT(DISTINCT CASE WHEN Returns = 10 AND Churn = 1 THEN Customer_ID END) AS Of_Cust_Returns_Churn		
+FROM all_ext					
+GROUP BY Age_Group					
+),					
+CTE2 AS(					
+    SELECT        					
+    Returns,Churn,Transaction_ID,Customer_ID,Age_Group,					
+    Of_Transactions,Of_Returns_Trans,Of_Churn_Trans, Of_Trans_Returns_Churn,					
+    ROUND(Of_Trans_Returns_Churn/SUM(Of_Transactions)OVER() *100,2) AS Percentage_Trans_Returns_Churn,					
+    Of_Customers, Of_Returns_Cust,Of_Churn_Cust,Of_Cust_Returns_Churn,					
+    ROUND(Of_Cust_Returns_Churn/SUM(Of_Customers) OVER() *100,2) AS Percentage_Cust_Returns_Churn					
+FROM CTE1					
+)					
+SELECT Age_Group,					
+	   	 Of_Transactions,
+       Of_Returns_Trans,	
+       Of_Churn_Trans
+       Percentage_Trans_Returns_Churn,	
+       Of_Customers,		
+       Of_Returns_Cust,
+       Of_Churn_Cust,
+       Percentage_Cust_Returns_Churn			
+FROM CTE2					
+GROUP BY Age_Group;					
+```
+
 
         
   
