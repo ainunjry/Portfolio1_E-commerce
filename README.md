@@ -81,8 +81,9 @@ using the original dataset.
 ***Python Pandas***
  1. Data Cleaning
  - a. info :
-     - df.head(10)
-     - df.info()
+     -  ````df.head(10)````
+     -  ````df.info()````
+  
  - b. shape :
      - df.shape
      - print(type(df)
