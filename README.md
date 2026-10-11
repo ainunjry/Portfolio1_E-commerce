@@ -440,6 +440,16 @@ GROUP BY Age_Group;
 
 ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P%2C2D.png)
 
+***Interpretation***
+Generating  125.6 K ,342.7 M  and 377K in  total  transactions, purchase amount and quantity respectively, the male 
+customers contributed much more.
+meanwhile the female customers generated 0.6%,  1.2 % and  0.8 % less with  124.3 K, 338 M and 334K  . 
+The customer aged  18 - 28  accounted for the largest share of total  transaction, representing 21 % ( 53.4 K) 
+transactions and also made up
+21% (10.5 K)  of total customer base, however the highest total purchase amount came from group aged 40 -50 with 140 M , 
+slightly higher than the other age group,   which recorded approximately  129 - 139 M.
+
+
 
         
   
