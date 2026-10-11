@@ -467,6 +467,8 @@ Picture from Business Question 2,  Identifying Size, Mean, Sum columns relations
 
 Purchase quantity was consistent across genders, both male and female customers averaging 3 items per transactions.
 
+- [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#content)
+
 #### 'Returns and Churn rates'
 
 #### ***Business question 4:***
