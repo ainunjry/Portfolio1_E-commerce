@@ -514,6 +514,15 @@ Is the payment method related to returns and churn?
 
 ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.6.png)
 ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.6B.png)
+
+***Interpretation***
+
+Paypal and Credit Card transactions  suggested  higher Return  and Churn rates than Cash payments.
+Flexible payment option may encourage  impulse purchases  potentially leading  to more Returns.
+
+
+***Business question 6:***
+
   
     
 
