@@ -511,6 +511,9 @@ Is the payment method related to returns and churn?
 ````python
   a = np.round(pd.crosstab(ex_data['Churn'], ex_data['Payment_Method'],normalize='index')*100,2)
   print(a)
+````
+
+````python
   re_ch('Returns','Payment_Method')
 ````
 
