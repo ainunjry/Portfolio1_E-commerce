@@ -383,7 +383,7 @@ should these factors have indicated meaningful differences across categories.
 - output :
   ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.2B.png)
 
-- Identifying Size, Mean, Sum columns relationship :'Product_Price','Quantity','Total_Purchase_Amount' by Gender.
+Identifying Size, Mean, Sum columns relationship :'Product_Price','Quantity','Total_Purchase_Amount' by Gender.
     - relate (ex_data,'Gender','Product_Price','Quantity','Total_Purchase_Amount')
 - Output :
   ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.2C.png)
@@ -441,6 +441,7 @@ GROUP BY Age_Group;
 ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P%2C2D.png)
 
 ***Interpretation***
+
 Generating  125.6 K ,342.7 M  and 377K in  total  transactions, purchase amount and quantity respectively, the male 
 customers contributed much more.
 meanwhile the female customers generated 0.6%,  1.2 % and  0.8 % less with  124.3 K, 338 M and 334K  . 
@@ -448,6 +449,20 @@ The customer aged  18 - 28  accounted for the largest share of total  transactio
 transactions and also made up
 21% (10.5 K)  of total customer base, however the highest total purchase amount came from group aged 40 -50 with 140 M , 
 slightly higher than the other age group,   which recorded approximately  129 - 139 M.
+
+
+***Business question 3:***
+What is the average quantity purchased by customers?
+
+Picture from Business Question 2,  Identifying Size, Mean, Sum columns relationship :'Quantity' by Gender.
+
+![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.2C.png)
+
+***Interpretation***
+
+Purchase quantity was consistent across genders, both male and female customers averaging 3 items per transactions.
+
+
 
 
 
