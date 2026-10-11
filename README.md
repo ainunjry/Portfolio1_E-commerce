@@ -292,7 +292,7 @@ From  Box Plot Chart visualization for [Total Purchase Amount] columns : No outl
 
 ***Business question 1:***
    -  Which product category has the highest number of purchases?
-- SQL, query:
+- `SQL, query:`
   
 ```sql
 WITH CTE1 AS(		
@@ -336,7 +336,7 @@ ORDER BY Total_Transactions DESC;
 ![The highest number of purchases by Product category](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.1.png)
 
 
-  - Tableau :
+  - `Tableau` :
     
 ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Tableau-P%2C1C.png)
 
@@ -350,6 +350,39 @@ should these factors have indicated meaningful differences across categories.
    - Are age and gender related to purchase volume and frequency?
      
 **`Pandas`**
+
+- Creating variable bins dan labels to group age of buyers.
+
+     - bins = [17,28,39,50,60,70]
+     - labels =  ['18 - 28 years',
+                '29 - 39 years',
+                '40 - 50 years',
+                '51 - 60 years',
+                '61 - 70 years']
+     - print(bins)
+     - print(labels)
+- Applying "bins" & "labels" to new column : ex_data['Age_Group]
+     - ex_data['Age_Group'] = pd.cut(ex_data['Age'],
+                              bins=bins,
+                              labels=labels)
+
+- Creating function to analyze The number, average, sum Purchase behavior by Age and gender.
+
+     - def relate (a,b,c,d,e):
+         - size1 = a.groupby(b)[[c,d,e]].size()
+         - mean1 = np.round(a.groupby(b)[[c,d,e]].mean(),2)
+         - sum1 = np.round(a.groupby(b)[[c,d,e]].sum(),2)
+
+         - print(f"the number of each column by {b}, {c},{d},{e} on average: {size1}")
+         - print(f"{b} related to purchase behavior, {c},{d},{e} on average: {mean1}")
+         - print(f"{b} related to purchase behavior, {c},{d},{e} in amount: {sum1}")
+
+- CHECKING Size - Mean - Sum,  columns relationship :'Product_Price','Quantity','Total_Purchase_Amount' by Age_group
+         - relate (ex_data,'Age_Group','Product_Price','Quantity','Total_Purchase_Amount')
+  
+
+        
+  
 
 
 
