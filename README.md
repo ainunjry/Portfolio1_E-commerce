@@ -534,7 +534,7 @@ Is gender related to returns and churn?
 
 - Output:
 
-![](
+
 
   
     
