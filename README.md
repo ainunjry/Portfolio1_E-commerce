@@ -356,31 +356,34 @@ category were similar , about $500 and 3.
 **`Pandas`**
 
 - Creating variable bins dan labels to group age of buyers.
-
-     - bins = [17,28,39,50,60,70]
-     - labels =  ['18 - 28 years',
+  ````python
+     bins = [17,28,39,50,60,70]
+     labels =  ['18 - 28 years',
                 '29 - 39 years',
                 '40 - 50 years',
                 '51 - 60 years',
                 '61 - 70 years']
-     - print(bins)
-     - print(labels)
+     print(bins)
+     print(labels)
+  ````
 - Applying "bins" & "labels" to new column : ex_data['Age_Group]
-     - ex_data['Age_Group'] = pd.cut(ex_data['Age'],
+       ````python
+       ex_data['Age_Group'] = pd.cut(ex_data['Age'],
                               bins=bins,
                               labels=labels)
+       ````
 
 - Creating function to analyze The number, average, sum Purchase behavior by Age and gender.
+   ````python
+       def relate (a,b,c,d,e):
+         size1 = a.groupby(b)[[c,d,e]].size()
+         mean1 = np.round(a.groupby(b)[[c,d,e]].mean(),2)
+         sum1 = np.round(a.groupby(b)[[c,d,e]].sum(),2)
 
-     - def relate (a,b,c,d,e):
-         - size1 = a.groupby(b)[[c,d,e]].size()
-         - mean1 = np.round(a.groupby(b)[[c,d,e]].mean(),2)
-         - sum1 = np.round(a.groupby(b)[[c,d,e]].sum(),2)
-
-         - print(f"the number of each column by {b}, {c},{d},{e} on average: {size1}")
-         - print(f"{b} related to purchase behavior, {c},{d},{e} on average: {mean1}")
-         - print(f"{b} related to purchase behavior, {c},{d},{e} in amount: {sum1}")
-
+         print(f"the number of each column by {b}, {c},{d},{e} on average: {size1}")
+         print(f"{b} related to purchase behavior, {c},{d},{e} on average: {mean1}")
+         print(f"{b} related to purchase behavior, {c},{d},{e} in amount: {sum1}")
+  ````
 - Identifying Size,Mean ,Sum,columns relationship :'Product_Price','Quantity','Total_Purchase_Amount' by Age_group.
   
      - relate (ex_data,'Age_Group','Product_Price','Quantity','Total_Purchase_Amount')
@@ -488,6 +491,22 @@ Purchase quantity was consistent across genders, both male and female customers 
 Interestingly, category with the highest number of  transactions practically had nearly  loyal customers.
 for example, electronics generated  a 10.18% and a 5.02 % in Return and Churn rate, meanwhile Clothing  despite having fewer transactions, generating a10.12 %  Return rate and slighly  higher a 5.04% Churn rate.
 It suggests  the post-purchase customer experience may play a significant role in customer retention.
+
+***Business question 5:***
+
+Is the payment method related to returns and churn?
+
+**`Pandas`**
+
+ - Creating function to analyze product category, gender and payment method related to returns and churn
+
+   ````python
+      def re_ch (b,c):
+         percentage = np.round(pd.crosstab(ex_data[b], ex_data[c],normalize='index')* 100,2)
+         print(f"Percentage '%' of related {b} to {c}:\n {percentage} ")
+  ```
+
+
 
 
 
