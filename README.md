@@ -382,6 +382,11 @@ should these factors have indicated meaningful differences across categories.
      - relate (ex_data,'Age_Group','Product_Price','Quantity','Total_Purchase_Amount')
 - output :
   ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.2B.png)
+
+- Identifying Size, Mean, Sum columns relationship :'Product_Price','Quantity','Total_Purchase_Amount' by Gender.
+    - relate (ex_data,'Gender','Product_Price','Quantity','Total_Purchase_Amount')
+- Output :
+  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.2B.png)
   
 
         
