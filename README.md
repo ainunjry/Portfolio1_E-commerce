@@ -346,6 +346,9 @@ However the difference was minimal compared with clothing , which recorded 62.58
 Given relatively  similar transaction volumes, this analysis would like look into the Returns and Churn factors,
 should these factors have indicated meaningful differences across categories.
 
+***Business question 2:***
+   - Are age and gender related to purchase volume and frequency?
+
 
 
 
