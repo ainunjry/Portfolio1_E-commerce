@@ -523,6 +523,19 @@ Flexible payment option may encourage  impulse purchases  potentially leading  t
 
 ***Business question 6:***
 
+Is gender related to returns and churn?
+
+- Identifying gender related to returns and churn.
+
+```` python
+  re_ch('Returns','Gender')
+  re_ch('Churn','Gender')
+````
+
+- Output:
+
+![](
+
   
     
 
