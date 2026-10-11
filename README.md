@@ -336,6 +336,8 @@ ORDER BY Total_Transactions DESC;
 - The highest number of purchases by Product category
 ![The highest number of purchases by Product category](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.1.png)
 
+[Back to Business question No.4](
+
 
   - `Tableau` :
     
@@ -466,9 +468,13 @@ Purchase quantity was consistent across genders, both male and female customers 
 
 #### 'Returns and Churn rates'
 
-***Business question 4:***
+#### ***Business question 4:***
 
 - Which product category has the highest return and churn rates?
+
+**`SQL, query is similar with Business question no.1`**
+
+[SQL query](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#query-business-questions-no-1--4)
 
 
 
