@@ -379,7 +379,9 @@ should these factors have indicated meaningful differences across categories.
 
 - Identifying Size,Mean ,Sum,columns relationship :'Product_Price','Quantity','Total_Purchase_Amount' by Age_group.
   
-         - relate (ex_data,'Age_Group','Product_Price','Quantity','Total_Purchase_Amount')
+     - relate (ex_data,'Age_Group','Product_Price','Quantity','Total_Purchase_Amount')
+- output :
+  ![](
   
 
         
