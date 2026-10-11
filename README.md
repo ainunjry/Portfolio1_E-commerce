@@ -501,12 +501,23 @@ Is the payment method related to returns and churn?
  - Creating function to analyze product category, gender and payment method related to returns and churn
 
    ````python
-      def re_ch (b,c):
+   def re_ch (b,c):
          percentage = np.round(pd.crosstab(ex_data[b], ex_data[c],normalize='index')* 100,2)
          print(f"Percentage '%' of related {b} to {c}:\n {percentage} ")
   ````
 
-Identifying 
+- Identifying churn and returns rate by payment method
+
+````python
+  a = np.round(pd.crosstab(ex_data['Churn'], ex_data['Payment_Method'],normalize='index')*100,2)
+  print(a)
+  re_ch('Returns','Payment_Method')
+````
+
+- Output:
+
+  
+    
 
 
 
