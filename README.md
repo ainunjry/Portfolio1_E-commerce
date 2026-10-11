@@ -377,7 +377,8 @@ should these factors have indicated meaningful differences across categories.
          - print(f"{b} related to purchase behavior, {c},{d},{e} on average: {mean1}")
          - print(f"{b} related to purchase behavior, {c},{d},{e} in amount: {sum1}")
 
-- CHECKING Size - Mean - Sum,  columns relationship :'Product_Price','Quantity','Total_Purchase_Amount' by Age_group
+- Identifying Size,Mean ,Sum,columns relationship :'Product_Price','Quantity','Total_Purchase_Amount' by Age_group.
+  
          - relate (ex_data,'Age_Group','Product_Price','Quantity','Total_Purchase_Amount')
   
 
