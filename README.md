@@ -476,6 +476,18 @@ Purchase quantity was consistent across genders, both male and female customers 
 
 [SQL query](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#query-business-questions-no-1--4)
 
+- Output:
+  
+![The highest number of purchases by Product category](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.1.png)
+
+***Interpretation***
+
+Interestingly, category with the highest number of  transactions practically had nearly  loyal customers.
+for example, electronics generated  a 10.18% and a 5.02 % in Return and Churn rate, meanwhile Clothing  despite having fewer transactions, generating a10.12 %  Return rate and slighly  higher a 5.04% Churn rate.
+It suggests  the post-purchase customer experience may play a significant role in customer retention.
+
+
+
 
 
 
