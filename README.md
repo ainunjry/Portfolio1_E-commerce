@@ -330,9 +330,12 @@ GROUP BY Product_Category
 ORDER BY Total_Transactions DESC;
 ```
 **Output query SQL**
-
+- The highest number of purchases by Product category
 ![The highest number of purchases by Product category](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.1.png)
-  
+
+
+  - Tableau :
+![](
 
 
 
