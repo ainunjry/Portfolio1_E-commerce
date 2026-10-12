@@ -702,7 +702,9 @@ under 50 had an average 4% churn rate , with a 12% percentage points higher of r
 In contrast, customers over  50 had  a nearly 1% percentage points lower churn rate and a  nearly 15% retention rate,
 Over 80% customers ever returned, were it not handled, unsatisfaction experience would have been worse.
 
-[View Tableau visualization-download here](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Tableau_E-Commerce%20.pdf)
+[View Tableau visualization GIF Format-download here](https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/Project_1.gif)
+
+[View Tableau visualization-download here](https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/Tableau_E-Commerce%20.pdf)
 
 [View G-Colab-download here](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/EDA_EXTRACT_1.ipynb)
 
