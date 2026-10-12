@@ -661,7 +661,18 @@ GROUP BY Age_Group;
 
 - Output of SQL, query-1 :
 
-  [](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.8.png)
+  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.8.png)
+
+  - Output of SQL, query-2 :
+ 
+  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.8B.png)
+
+  ***Interpretation: ***
+Customers with  two returns   that subsequently  led to churn had anearly 30% higher frequency than 3 returns,
+and  had 49% higher than those with 4 returns or more.
+Furthermore, customers aged 18-28 had highest returns and churn rate at 8.73 % and 4.43 % respectively across all age 
+groups, meanwhile  customers aged  51 - 60 had the lowest, at 7.48% and 3.65% respectively.
+
 
 
 
