@@ -112,7 +112,8 @@ using the original dataset.
      ex_data['Returns'].value_counts()
 ````
      
-       ![View result column Returns](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Nmber%20of%20Returns.png)
+![View result column Returns](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Nmber%20of%20Returns.png)
+
 #### Interpretation :
 The dataset has 250.000 rows, 14 columns, column Returns has less 48.000 missing values, some transactions
 appeared had no returned items.
@@ -122,24 +123,32 @@ appeared had no returned items.
 ### 2. Exploratory Data Analysis (EDA)
    
    ***Creating a categorical atribute which splits the values,a continous data into a specified number groups.***
-   - bin_x = np.linspace(min(ex_data['Quantity']), max(ex_data['Quantity']),5)
-   - bin_x
-   - Output : array([1., 2., 3., 4., 5.])
+````python
+   bin_x = np.linspace(min(ex_data['Quantity']), max(ex_data['Quantity']),5)
+   bin_x
+   Output : array([1., 2., 3., 4., 5.])
+````
   
    ***Creating group as a label for bin_x variable***
-   - g_name = ['Low', 'Under_rated', 'Medium', 'High']
-   - g_name
-   - Output : ['Low', 'Under_rated', 'Medium', 'High']
+````python
+   g_name = ['Low', 'Under_rated', 'Medium', 'High']
+   g_name
+   Output : ['Low', 'Under_rated', 'Medium', 'High']
+````
   
    ***Creating new column to label column of Quantity***
-   - ex_data['Quantity_bin'] = pd.cut(ex_data['Quantity'], bin_x, labels=g_name, include_lowest=True)
+````python
+   ex_data['Quantity_bin'] = pd.cut(ex_data['Quantity'], bin_x, labels=g_name, include_lowest=True)
+````
 
    ***To visualize the data range accross the Quantity column.***
-   - plt.figure(figsize=(6,4))
-   - plt.bar(g_name, ex_data['Quantity_bin'].value_counts(),color = 'orange')
-   - plt.xlabel('Level')
-   - plt.ylabel('Amount')
-   - plt.title('Quantity Bins')
+````python
+   plt.figure(figsize=(6,4))
+   plt.bar(g_name, ex_data['Quantity_bin'].value_counts(),color = 'orange')
+   plt.xlabel('Level')
+   plt.ylabel('Amount')
+   plt.title('Quantity Bins')
+````
 
    - view bar of quantity level :
     
@@ -148,11 +157,13 @@ appeared had no returned items.
 From categorical atribute of values, the Low group of Quantity column is The highest frequency, more than 90k.
 
    ***To visualize the distribution of Product price using kdeplot,and Total Purchase Amount.***
-   - plt.figure(figsize = (6,4))
-   - sns.kdeplot(data=ex_data, x='Product Price', fill=True, color='grey')
-   - plt.title('KDE distribution of Product Price')
-   - plt.xlabel('Price')
-   - plt.show()
+````python
+   plt.figure(figsize = (6,4))
+   sns.kdeplot(data=ex_data, x='Product Price', fill=True, color='grey')
+   plt.title('KDE distribution of Product Price')
+   plt.xlabel('Price')
+   plt.show()
+````
      
    - View KDE Plot:
 
@@ -160,32 +171,34 @@ From categorical atribute of values, the Low group of Quantity column is The hig
 
   
   ***Creating function to analyze statistic***
-   - def statistic(c,d):
-     - mean = c[d].mean()
-     - median = c[d].median()
-     - mode = c[d].mode()
-     - skewness = c[d].skew()
-     - print(f"For column {d} : mean={mean}, median={median}, mode={mode}, skewness={skewness}")
+````python
+   def statistic(c,d):
+      mean = c[d].mean()
+      median = c[d].median()
+      mode = c[d].mode()
+      skewness = c[d].skew()
+      print(f"For column {d} : mean={mean}, median={median}, mode={mode}, skewness={skewness}")
 
-   - statistic(ex_data, 'Product Price')
+   statistic(ex_data, 'Product Price')
+````
 
-     - Output :
+- Output :
        For column Product Price : mean=254.742724, median=255.0, mode=0    290
        Name: Product Price, dtype: int64, skewness=0.0011635058483736365
 #### Interpretation:
 The histogram visualized bell-shaped curve, symmetrical, and the skewness is 0, it means Product Price data distribution is normal, median and mean are relatively closed, mean could be representative of typical value.
 
   ***To check skewness Total Purchase Amount & Quantity column***
-   - statistic(ex_data, 'Quantity')
-   - print()
-   - statistic(ex_data, 'Total Purchase Amount')
+````python
+    statistic(ex_data, 'Quantity')
+    print()
+    statistic(ex_data, 'Total Purchase Amount')
+````
 
-     - Output :
+- Output :
        For column Quantity : mean=3.004936, median=3.0, mode=0    4
        Name: Quantity, dtype: int64, skewness=-0.005935270784344358
-
-       For column Total Purchase Amount : mean=2725.385196, median=2725.0, mode=0    2533
-       1    4456
+       For column Total Purchase Amount : mean=2725.385196, median=2725.0, mode=0    2533 1    4456
        Name: Total Purchase Amount, dtype: int64, skewness=-0.00210492340006921
 
 #### Interpretation:
