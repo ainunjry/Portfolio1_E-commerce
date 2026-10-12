@@ -431,7 +431,7 @@ Identifying Size, Mean, Sum columns relationship :'Product_Price','Quantity','To
   ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.2C.png)
 
 
-**`SQL, query`**
+#### **`SQL, query business question no.2 & 7`**
 
 ```sql
 WITH CTE1 AS(					
