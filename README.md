@@ -568,9 +568,9 @@ Is gender related to returns and churn?
 
 - Output:
 
-  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.7.png
+  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.7.png)
 
-  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.7B.png
+  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.7B.png)
 
   
 ***Interpretation: ***
@@ -602,6 +602,8 @@ FROM CustomerSummary;
 ```
 
 - Output :
+
+  
 
 
 
