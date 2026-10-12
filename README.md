@@ -657,6 +657,12 @@ SELECT
         Returns_Churn_rate			
 FROM CTE2
 GROUP BY Age_Group;
+```
+
+- Output of SQL, query-1 :
+
+  [](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.8.png)
+
 
 
     
