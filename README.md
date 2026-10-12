@@ -431,7 +431,7 @@ Identifying Size, Mean, Sum columns relationship :'Product_Price','Quantity','To
   ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.2C.png)
 
 
-#### **`SQL, query business question no.2 & 7`**
+#### **`SQL, query business question no.2 & `**
 
 ```sql
 WITH CTE1 AS(					
@@ -583,7 +583,7 @@ Despites both  groups  showed a relatively similar Churn rate of around 50%.
 
  What is the correlation between number of customers, returns, and churn?
 
- ***SQL, query***
+ ***SQL, query-1***
 
  ```sql
   WITH CustomerSummary AS (
@@ -601,23 +601,70 @@ SELECT
 FROM CustomerSummary;
 ```
 
-- Output :
 
-  [](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.8.png)
+- SQL, query-2 
+
+```sql
+WITH CTE1 AS(					
+            SELECT 					
+            Returns, Churn, Transaction_ID, Customer_ID,		
+    		CASE			
+    			WHEN Age >= 18 AND Age <= 28 THEN '18 - 28 Years'		
+    			WHEN Age >= 29 AND Age <= 39 THEN '29 - 39 Years'		
+    		 	WHEN Age >= 40 AND Age <= 50 THEN '40 - 50 Years'		
+    			WHEN Age >= 51 AND Age <= 60 THEN '51 - 60 Years'		
+    			WHEN Age >= 61 AND Age <= 70 THEN '61 - 70 Years'		
+     			WHEN Age >= 71 THEN 'Above 70 Years'		
+       			ELSE 'Unknown'		
+    		END AS Age_Group,			
+    	    COUNT(DISTINCT Transaction_ID)-2 AS Of_Transactions,				
+	    COUNT(DISTINCT CASE WHEN Returns = 10 THEN Transaction_ID END) AS Of_Returns,			
+	    COUNT(DISTINCT CASE WHEN Returns = 0 AND Returns <> '' THEN Transaction_ID END) AS Of_Cancel_Returns,			
+    	    COUNT(DISTINCT CASE WHEN Churn = 1 THEN Transaction_ID END) AS Of_Churn,			
+            COUNT(DISTINCT CASE WHEN Churn = 0 THEN Transaction_ID END) AS Of_Retained,					
+            COUNT(DISTINCT CASE WHEN Returns = 10 AND Churn = 1 THEN Transaction_ID END) AS Of_Returns_Churn					
+    					
+FROM all_ext			
+GROUP BY Age_Group			
+),			
+CTE2 AS(		
+    SELECT			
+    Returns,Churn,Transaction_ID,Age_Group,					
+    Of_Transactions,Of_Returns,			
+    ROUND(Of_Returns / SUM(Of_Transactions) OVER() *100,2) AS Of_Returns_rate,			
+    Of_Cancel_Returns,					
+    ROUND(Of_Cancel_Returns / SUM(Of_Transactions) OVER() *100,2) AS Cancel_Return_rate,				
+    Of_Churn,	
+    ROUND(Of_Churn / SUM(Of_Transactions) OVER() *100,2) AS Of_Churn_rate,					
+    Of_Retained,			
+    ROUND(Of_Retained / SUM(Of_Transactions) OVER() *100,2) AS Retained_rate,					
+    Of_Returns_Churn,	
+    ROUND(Of_Returns_Churn/SUM(Of_Transactions)OVER() *100,2) AS Returns_Churn_rate					
+FROM CTE1				
+)				
+SELECT  
+        Age_Group,					
+	Of_Transactions,			
+        Of_Returns,				
+        Of_Returns_rate,				
+        Of_Cancel_Returns,				
+        Cancel_Return_rate,				
+	Of_Churn,	
+        Of_Churn_rate,		
+        Of_Retained,			
+        Retained_rate,		
+        Of_Returns_Churn,			
+        Returns_Churn_rate			
+FROM CTE2
+GROUP BY Age_Group;
+
+
+    
+  
 
   
-[SQL, query from business question no.2](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#sql-query-business-question-no2--7)
-
-- Output :
-
-![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P%2C2D.png)
 
 
-***Interpretation: ***
-Customers with  two returns   that subsequently  led to churn had anearly 30% higher frequency than 3 returns,
-and  had 49% higher than those with 4 returns or more.
-Furthermore, customers aged 18-28 had highest returns and churn rate at 8.73 % and 4.43 % respectively across all age 
-groups, meanwhile  customers aged  51 - 60 had the lowest, at 7.48% and 3.65% respectively.
 
 
 
