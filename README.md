@@ -68,16 +68,13 @@ using the original dataset.
    1. Which product category has the highest number of purchases?
    2. Are age and gender related to purchase volume and frequency?
    3. What is the average quantity purchased by customers?
-   4. What is the highest product price in each product category?
-   5. Which product category has the highest return and churn rates?
-   6. Is the payment method related to returns and churn?
-   7. Is gender related to returns and churn?
-   8. What is the correlation between number of customers, returns, and churn?
-   9. What is the correlation between returns and churn?
-   10. Does purchase frequency by customer age   differ between churned and retained customers?
-   11. Does customer behavior change over time?
-   12. Does purchasing behavior differ between customer who returns product and those who don't?
-   13. Which factors are most  strongly associated with customer churn?
+   4. Which product category has the highest return and churn rates?
+   5. Is the payment method related to returns and churn?
+   6. Is gender related to returns and churn?
+   7. What is the correlation between number of customers, returns, and churn?
+   8. Does purchase frequency by customer age  differ between churned - retained customers and customers who return
+      product and those who don't ? 
+   
 
 ### Data understanding and cleaning
 
@@ -680,7 +677,7 @@ groups, meanwhile  customers aged  51 - 60 had the lowest, at 7.48% and 3.65% re
 
 ***Business question 8:***
 
-Does purchase frequency by customer age  differ between churned - retained customers and customer who returns product 
+Does purchase frequency by customer age  differ between churned - retained customers and customers who return product 
 and those who don't ? 
 
 ***The query and the table from business question No.7  needed for analysis***
