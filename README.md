@@ -579,7 +579,7 @@ they   may be somewhat more likely to returns, following  an unsatisfactory expe
 Despites both  groups  showed a relatively similar Churn rate of around 50%.
 
 
-***Business question 7:***
+#### ***Business question 7:***
 
  What is the correlation between number of customers, returns, and churn?
 
@@ -603,8 +603,21 @@ FROM CustomerSummary;
 
 - Output :
 
-  
+  [](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.8.png)
 
+  
+[SQL, query from business question no.2](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#sql-query-business-question-no2--7)
+
+- Output :
+
+![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P%2C2D.png)
+
+
+***Interpretation: ***
+Customers with  two returns   that subsequently  led to churn had anearly 30% higher frequency than 3 returns,
+and  had 49% higher than those with 4 returns or more.
+Furthermore, customers aged 18-28 had highest returns and churn rate at 8.73 % and 4.43 % respectively across all age 
+groups, meanwhile  customers aged  51 - 60 had the lowest, at 7.48% and 3.65% respectively.
 
 
 
