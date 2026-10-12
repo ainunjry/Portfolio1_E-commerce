@@ -550,8 +550,7 @@ Is the payment method related to returns and churn?
 ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.6.png)
 ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.6B.png)
 
-***Interpretation***
-
+***Interpretation: ***
 Paypal and Credit Card transactions  suggested  higher Return  and Churn rates than Cash payments.
 Flexible payment option may encourage  impulse purchases  potentially leading  to more Returns.
 
@@ -574,10 +573,17 @@ Is gender related to returns and churn?
   ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.6B.png)
 
   
-***Interpretation***
+***Interpretation: ***
 The male customers had slightly higher return rates than the female customers,
 they   may be somewhat more likely to returns, following  an unsatisfactory experience.
 Despites both  groups  showed a relatively similar Churn rate of around 50%.
+
+
+***Business question 7:***
+
+
+
+
 
 
 
