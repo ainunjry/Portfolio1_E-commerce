@@ -568,9 +568,9 @@ Is gender related to returns and churn?
 
 - Output:
 
-  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.6.png)
+  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.7.png
 
-  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.6B.png)
+  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.7B.png
 
   
 ***Interpretation: ***
@@ -580,6 +580,30 @@ Despites both  groups  showed a relatively similar Churn rate of around 50%.
 
 
 ***Business question 7:***
+
+ What is the correlation between number of customers, returns, and churn?
+
+ ***SQL, query***
+
+ ```sql
+  WITH CustomerSummary AS (
+    SELECT 
+        Customer_ID,
+        COUNT(CASE WHEN Returns = 10 THEN 1 END) AS total_return,
+        MAX(CASE WHEN Churn = 1 THEN 1 ELSE 0 END) AS is_churn
+    FROM all_ext
+    GROUP BY Customer_ID
+)
+SELECT 
+    COUNT(CASE WHEN total_return = 2 AND is_churn = 1 THEN 1 END) AS customer_2x_return_churn,
+    COUNT(CASE WHEN total_return = 3 AND is_churn = 1 THEN 1 END) AS customer_3x_return_churn,
+    COUNT(CASE WHEN total_return > 3 AND is_churn = 1 THEN 1 END) AS customer_more_than_3x_return_churn
+FROM CustomerSummary;
+```
+
+- Output :
+
+
 
 
 
