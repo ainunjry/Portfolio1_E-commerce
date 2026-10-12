@@ -681,7 +681,7 @@ groups, meanwhile  customers aged  51 - 60 had the lowest, at 7.48% and 3.65% re
 Does purchase frequency by customer age  differ between churned - retained customers and customer who returns product 
 and those who don't ? 
 
-****The query and the table from business question No.7  needed for analysis***
+***The query and the table from business question No.7  needed for analysis***
 ---
 [SQL, query is from Business question No.7-query part-2](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#sql-query-2-for-business-questions-no-7--8)
 
@@ -698,7 +698,9 @@ under 50 had an average 4% churn rate , with a 12% percentage points higher of r
 In contrast, customers over  50 had  a nearly 1% percentage points lower churn rate and a  nearly 15% retention rate.
 
     
-  
+#### Key Insight
+
+
 
   
 
