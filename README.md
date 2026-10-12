@@ -689,14 +689,19 @@ and those who don't ?
  
   ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.8B.png)
 
+***Analysis with Tableau***
+
+![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/P.8%20Tableau.png)
+
+
   ***Interpretation: ***
 
 Customer aged 18 - 28 recorded the highest returns at 8.73% and 8.56% ,
 while aged 51 - 60  had the lowest at 7.48% and 7,52% , returns  and  cancel-returns rate respectively.
 But comparisons of customer who returns product and those who don't were not far,
 under 50 had an average 4% churn rate , with a 12% percentage points higher of retention rate, nearly 17%
-In contrast, customers over  50 had  a nearly 1% percentage points lower churn rate and a  nearly 15% retention rate.
-
+In contrast, customers over  50 had  a nearly 1% percentage points lower churn rate and a  nearly 15% retention rate,
+Over 80% customers ever returned, were it not handled, unsatisfaction experience would have been worse.
     
 #### Key Insight
 
