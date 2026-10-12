@@ -82,25 +82,35 @@ using the original dataset.
 ***Python Pandas***
  1. Data Cleaning
  - a. info :
-     -  ````df.head(10)````
-     -  ````df.info()````
+    ````python
+      df.head(10)
+      df.info()
+    ````
   
  - b. shape :
-     - df.shape
-     - print(type(df)
+  ````python
+     df.shape
+     print(type(df)
+  ````
  - c. checking duplicates :
-     - df.duplicated().sum()
+ ````python
+     df.duplicated().sum()
+````
  - d. checking missing values by creating another DataFrame variable :
-     - ex_data = df.copy()
-     - def cek(a,b):
-       - hasil = a[b].isnull().sum()
-       - print(f"The Number of isnull column {b}: {hasil}")
+````python
+     ex_data = df.copy()
+     def cek(a,b):
+     hasil = a[b].isnull().sum()
+     print(f"The Number of isnull column {b}: {hasil}")
 
-     - cek(ex_data,'Product Category')
-     - cek(ex_data,'Product Price')
+     cek(ex_data,'Product Category')
+     cek(ex_data,'Product Price')
+````
  - e. checking unique values  :
-     - ex_data['Customer Name'].nunique()
-     - ex_data['Returns'].value_counts()
+````python
+     ex_data['Customer Name'].nunique()
+     ex_data['Returns'].value_counts()
+````
      
        ![View result column Returns](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Nmber%20of%20Returns.png)
 #### Interpretation :
