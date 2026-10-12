@@ -207,38 +207,42 @@ the skewness for both columns are 0, The mean represent typical value of these t
 
 #### **Identifying outliers by Calculating Q1, Q3, IQR, both with outliers and no outliers.**
 ---
+````python
+ def stats(e,f):
+     Q1 = e[f].quantile(0.25)
+     Q3 = e[f].quantile(0.75)
+     IQR = Q3 - Q1
+     Lower = Q1 - 1.5 * IQR
+     Upper = Q3 + 1.5 * IQR
 
-- def stats(e,f):
-    - Q1 = e[f].quantile(0.25)
-    - Q3 = e[f].quantile(0.75)
-    - IQR = Q3 - Q1
-    - Lower = Q1 - 1.5 * IQR
-    - Upper = Q3 + 1.5 * IQR
 
+     outliers = e[f][(e[f]<Lower)|(e[f]>Upper)]
+     no_outliers = e[f][(e[f]>=Lower) & (e[f]<=Upper)]
 
-    - outliers = e[f][(e[f]<Lower)|(e[f]>Upper)]
-    - no_outliers = e[f][(e[f]>=Lower) & (e[f]<=Upper)]
+     print(f"1.IQR, Lower limit & Upper limit of column {f} are: {IQR}, {Lower}, {Upper}")
 
-    - print(f"1.IQR, Lower limit & Upper limit of column {f} are: {IQR}, {Lower}, {Upper}")
+     if outliers.empty:
+         print(f"2.Outliers of column {f}: Not Found")
+     else:
+         print(f"2.The Outliers of column {f} : {len(outliers)}")
 
-    - if outliers.empty:
-        - print(f"2.Outliers of column {f}: Not Found")
-    - else:
-        - print(f"2.The Outliers of column {f} : {len(outliers)}")
-
-    - print(f"3.No-outliers of column {f} : {len(no_outliers)}")
-
+     print(f"3.No-outliers of column {f} : {len(no_outliers)}")
+````
 
 ***Identifying outliers column Product Price***
-- stats(ex_data, 'Product Price')
-  - Output:
+````python
+ stats(ex_data, 'Product Price')
+````
+   Output:
      - 1.IQR, Lower limit & Upper limit of column Quantity are: 2.0, -1.0, 7.0
      - 2.Outliers of column Quantity: Not Found
      - 3.No-outliers of column Quantity : 250000
    
 
 ***Identifying outliers column Quantity***
-- stats(ex_data, 'Quantity')
+````python
+ stats(ex_data, 'Quantity')
+````
   - Output:
      - 1.IQR, Lower limit & Upper limit of column Quantity are: 2.0, -1.0, 7.0
      - 2.Outliers of column Quantity: Not Found
@@ -246,7 +250,9 @@ the skewness for both columns are 0, The mean represent typical value of these t
    
 
 ***Identifying outliers column Total Purchase Amounty***
-- stats(ex_data, 'Total Purchase Amount')
+````python
+ stats(ex_data, 'Total Purchase Amount')
+````
 - Output :
    - 1.IQR, Lower limit & Upper limit of column Total Purchase Amount are: 2499.0, -2272.5, 7723.5
    - 2.Outliers of column Total Purchase Amount: Not Found
@@ -258,12 +264,12 @@ the skewness for both columns are 0, The mean represent typical value of these t
 
 
  ***Displaying Box plot to identify outliers column Total Purchase Amount***
- 
-   - ex_data['Total Purchase Amount'].plot(kind='box', figsize=(6,4), vert = False, color = 'green')
-   - plt.title('The Box Plot Total Purchase')
-   - plt.ylabel('Amount')
-   - plt.show()
-
+ ````python
+    ex_data['Total Purchase Amount'].plot(kind='box', figsize=(6,4), vert = False, color = 'green')
+    plt.title('The Box Plot Total Purchase')
+    plt.ylabel('Amount')
+    plt.show()
+````
  ![Box plot](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Box%20Plot.png)
      
 #### Interpretation:
@@ -275,26 +281,32 @@ From  Box Plot Chart visualization for [Total Purchase Amount] columns : No outl
   ***Finding correlation between columns by Pearson & P-value and common code .corr()***
 
   Identifying correlation between columns.
-  - ex_data[['Product Price','Quantity','Total Purchase Amount']].corr()
-     - Output:
+````python
+   ex_data[['Product Price','Quantity','Total Purchase Amount']].corr()
+````
+  - Output:
    
        ![Correlation](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/Correlation.png)
 
   By Pearson & P-value.
-  - from scipy import stats
-  - pearson_coef,p_value = stats.pearsonr(ex_data['Churn'],ex_data['Product Price'])
-  - print(f"Pearson_coef : {pearson_coef}")
-  - print(f"p_value : {p_value}")
-
-    - Output:
+````python
+   from scipy import stats
+   pearson_coef,p_value = stats.pearsonr(ex_data['Churn'],ex_data['Product Price'])
+   print(f"Pearson_coef : {pearson_coef}")
+   print(f"p_value : {p_value}")
+````
+- Output:
     - Pearson_coef : 0.0011813320220758743
     - p_value : 0.5547460669888156
 
-  - pearson_coef_TP,p_value_TP = stats.pearsonr(ex_data['Total Purchase Amount'],ex_data['Product Price'])
-  - print(f"Pearson_coef_ : {pearson_coef_TP}")
-  - print(f"p_value : {p_value_TP}")
+- Correlation between column Total Purchase Amount and Product Price
+````python
+   pearson_coef_TP,p_value_TP = stats.pearsonr(ex_data['Total Purchase Amount'],ex_data['Product Price'])
+   print(f"Pearson_coef_ : {pearson_coef_TP}")
+   print(f"p_value : {p_value_TP}")
+````
 
-    - Output:
+- Output:
     - Pearson_coef_ : -0.0012972970953191519
     - p_value : 0.516567488744543
    
