@@ -13,7 +13,7 @@
 - [EDA-Correlation](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#correlation)
 - [Customer Behavior Analysis-Business questions No.1-3](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#customer-behavior-analysis)
 - [Customer Behavior Analysis-Business questions for Returns & Churn No.4-6](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#returns-and-churn-rates)
-- [Customer Behavior Analysis-Business questions for  No.7-8](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#business-question-7)
+- [Customer Behavior Analysis-Business questions for Returns & Churn  No.7-8](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#business-question-7)
 
 ## Customer behavior analysis related to Returns and Churn rate.
 
@@ -432,7 +432,7 @@ Identifying Size, Mean, Sum columns relationship :'Product_Price','Quantity','To
   ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.2C.png)
 
 
-#### **`SQL, query business question no.2 & `**
+#### **`SQL, query`**
 
 ```sql
 WITH CTE1 AS(					
@@ -603,7 +603,7 @@ FROM CustomerSummary;
 ```
 
 
-- SQL, query-2 
+#### `SQL, query-2 for Business questions No. 7 & 8`
 
 ```sql
 WITH CTE1 AS(					
@@ -676,8 +676,18 @@ Furthermore, customers aged 18-28 had highest returns and churn rate at 8.73 % a
 groups, meanwhile  customers aged  51 - 60 had the lowest, at 7.48% and 3.65% respectively.
 
 
+***Business question 8:***
 
+Does purchase frequency by customer age  differ between churned - retained customers and customer who returns product 
+and those who don't ? 
 
+***The query and the table from business question No.7  needed for analysis***
+---
+[SQL, query is from Business question No.7-query-2]
+
+- Output of SQL, query-2 :
+ 
+  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/SQL-P.8B.png)
     
   
 
