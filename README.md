@@ -569,6 +569,17 @@ Is gender related to returns and churn?
 
 - Output:
 
+  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.6.png)
+
+  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/PY-P.6B.png)
+
+  
+***Interpretation***
+The male customers had slightly higher return rates than the female customers,
+they   may be somewhat more likely to returns, following  an unsatisfactory experience.
+Despites both  groups  showed a relatively similar Churn rate of around 50%.
+
+
 
 
   
