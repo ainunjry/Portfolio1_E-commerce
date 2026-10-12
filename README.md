@@ -14,6 +14,7 @@
 - [Customer Behavior Analysis-Business questions No.1-3](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#customer-behavior-analysis)
 - [Customer Behavior Analysis-Business questions for Returns & Churn No.4-6](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#returns-and-churn-rates)
 - [Customer Behavior Analysis-Business questions for Returns & Churn  No.7-8](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#business-question-7)
+- [Key Insight](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#key-insight)
 
 ## Customer behavior analysis related to Returns and Churn rate.
 
@@ -579,6 +580,7 @@ The male customers had slightly higher return rates than the female customers,
 they   may be somewhat more likely to returns, following  an unsatisfactory experience.
 Despites both  groups  showed a relatively similar Churn rate of around 50%.
 
+- [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#content)
 
 #### ***Business question 7:***
 
@@ -702,9 +704,24 @@ But comparisons of customer who returns product and those who don't were not far
 under 50 had an average 4% churn rate , with a 12% percentage points higher of retention rate, nearly 17%
 In contrast, customers over  50 had  a nearly 1% percentage points lower churn rate and a  nearly 15% retention rate,
 Over 80% customers ever returned, were it not handled, unsatisfaction experience would have been worse.
-    
+
+- [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#content)
+	
 #### Key Insight
 
+Satisfaction customer  rate zero in on to accumulative qualified transactions for loyal customer.
+The highly Returns customers  represented   87 %  rate based the overall customers.
+Customers satisfaction  appeared to be more  easily eroded, with  2 returns , potentially leading to churn.
+The young adult customers may require more attention,  making  it important to prioritise their higher returns and churn-
+related to complaints.
+
+Intensifying enhancement and dive-in more information,
+such as fabric qualification,  competitive price, clarity and alignment rate to item description on store front or whistlist
+compared with received items and delivery, reducing Returns rate  that led to churn.
+For those customers with 45 - 60  days no transactions, re-engagement highly needed, by cashback promo,
+win -  back voucher,  a whist list - discount promo, and etc
+
+- [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#content)
 
 
   
