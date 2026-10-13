@@ -13,7 +13,7 @@
 - [EDA-Correlation](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#correlation)
 - [Customer Behavior Analysis-Business questions No.1-3](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#customer-behavior-analysis)
 - [Customer Behavior Analysis-Business questions for Returns & Churn No.4-6](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#returns-and-churn-rates)
-- [Customer Behavior Analysis-Business questions for Returns & Churn  No.7-8](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#business-question-7)
+- [Customer Behavior Analysis-Business questions for Returns & Churn  No.7-9](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#business-question-7)
 - [Key Insight](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#key-insight)
 
 ## Customer behavior analysis related to Returns and Churn rate.
@@ -708,6 +708,13 @@ Over 80% customers ever returned, were it not handled, unsatisfaction experience
 
 [View G-Colab-download here](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/EDA_EXTRACT_1.ipynb)
 
+
+***Business question 9:***
+
+How many at-risk  customers who had last 45-60 day-transaction to re-engage, grouped by their favourite product?
+
+
+
 - [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#content)
 
   
@@ -723,8 +730,8 @@ related to complaints.
 Intensifying enhancement and dive-in more information,
 such as fabric qualification,  competitive price, clarity and alignment rate to item description on store front or whistlist
 compared with received items and delivery, reducing Returns rate  that led to churn.
-For those customers with 45 - 60  days no transactions, re-engagement highly needed, by cashback promo,
-win -  back voucher,  a whist list - discount promo, and etc
+For those at risk customers with 45 - 60-day-transactions, re-engagement highly needed, by cashback promo,
+win -  back voucher,  a whist list - discount promo, and etc.
 
 - [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#content)
 
