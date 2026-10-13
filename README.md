@@ -74,7 +74,7 @@ using the original dataset.
    7. What is the correlation between number of customers, returns, and churn?
    8. Does purchase frequency by customer age  differ between churned - retained customers and customers who return
       product and those who don't ? 
-   
+   9. How many at-risk  customers who had last 45-60 day-transaction to re-engage, grouped by their favourite product?
 
 ### Data understanding and cleaning
 
