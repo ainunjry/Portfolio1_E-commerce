@@ -713,6 +713,49 @@ Over 80% customers ever returned, were it not handled, unsatisfaction experience
 
 How many at-risk  customers who had last 45-60 day-transaction to re-engage, grouped by their favourite product?
 
+***`SQL, query'***
+
+```sql
+WITH Max_p AS(	
+SELECT 	
+    Customer_ID, Customer_name, Purchase_date,	
+    DATE_ADD(MAX(Purchase_date), INTERVAL 1 DAY) AS A_day_after_last_PD,	
+    Product_Category, 	
+    COUNT(Transaction_ID) AS Total_transactions	
+	
+FROM all_ext	
+WHERE YEAR(Purchase_date) = 2023 AND MONTH(Purchase_date) >= 7	
+GROUP BY Product_Category	
+),	
+INTV AS(	
+SELECT	
+    Customer_ID, Customer_name, Purchase_date,	
+    A_day_after_last_PD,	
+    DATEDIFF('2023-09-13', A_day_after_last_PD) = 45 AS Int_45_days,	
+    DATEDIFF('2023-09-13', A_day_after_last_PD) = 60 AS Int_60_days,	
+    Product_Category, 	
+    Total_transactions	
+FROM Max_p	
+)	
+	
+SELECT	
+    Product_Category,Total_transactions,	
+    COUNT(DISTINCT CASE WHEN Int_45_days THEN Customer_ID END) AS of_Customers_last_45_days,	
+    COUNT(DISTINCT CASE WHEN Int_60_days THEN Customer_ID END) AS of_Customers_last_60_days	
+FROM INTV	
+GROUP BY Product_Category	
+HAVING Total_transactions < (SELECT AVG(Total_transactions) FROM Max_p)	
+ORDER BY of_Customers_last_60_days DESC;
+```
+
+- Output :
+
+  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/P.9-SQL.png)
+
+  
+***Interpretation: ***
+
+
 
 
 - [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#content)
