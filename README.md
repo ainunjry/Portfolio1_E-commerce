@@ -755,6 +755,8 @@ ORDER BY of_Customers_last_60_days DESC;
   
 ***Interpretation: ***
 
+From this table,  42  at-risk customers who potentially led to churn  in clothing category with 1 transaction  for the last 60 days recorded ( the maximum purchase date was on Sep 13 2023),
+and over  at-risk 45 customers  in books and electronics products for the last 45 days.
 
 
 
