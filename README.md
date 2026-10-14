@@ -772,11 +772,20 @@ Customers satisfaction  appeared to be more  easily eroded, with  2 returns , po
 The young adult customers may require more attention,  making  it important to prioritise their higher returns and churn-
 related to complaints.
 
-Intensifying enhancement and dive-in more information,
-such as fabric qualification,  competitive price, clarity and alignment rate to item description on store front or whistlist
-compared with received items and delivery, reducing Returns rate  that led to churn.
+Intensifying enhancement and dive-in more information, such as fabric qualification, competitive price, clarity and 
+alignment rate to item description on store front or whistlist compared with received items and delivery, reducing 
+Returns rate that led to churn.
 For those at risk customers with 45 - 60-day-transactions, re-engagement highly needed, by cashback promo,
-win -  back voucher,  a whist list - discount promo, and etc.
+win-back voucher,  a whist list - discount promo, and etc.
+
+#### Scope and Boundaries
+
+XAMPP PHPMyadmin has file uploaded size limitation , hence I split the dataset into 4 parts,
+To run query , I created a  View table , named all_ext.
+I uploaded Tableau interactive visualization in format GIF to demonstrate practically dashboard.
+
+[Download - here : Tableau.twbx](https://drive.google.com/file/d/1UHshU--K6McJdePf94_ciB1p4U0CJX8s/view?usp=drive_link)
+
 
 - [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#content)
 
