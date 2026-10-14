@@ -15,6 +15,7 @@
 - [Customer Behavior Analysis-Business questions for Returns & Churn No.4-6](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#returns-and-churn-rates)
 - [Customer Behavior Analysis-Business questions for Returns & Churn  No.7-9](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#business-question-7)
 - [Key Insight](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#key-insight)
+- [Scope and Boundaries](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#scope-and-boundaries)
 
 ## Customer behavior analysis related to Returns and Churn rate.
 
@@ -780,7 +781,7 @@ win-back voucher,  a whist list - discount promo, and etc.
 
 #### Scope and Boundaries
 
-XAMPP PHPMyadmin has file uploaded size limitation , hence I split the dataset into 4 parts,
+XAMPP PHPMyadmin has file uploaded size limitation , hence I split the dataset into 4 parts.
 To run query , I created a  View table , named all_ext.
 I uploaded Tableau interactive visualization in format GIF to demonstrate practically dashboard.
 
