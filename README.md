@@ -767,7 +767,7 @@ and over  at-risk 45 customers  in books and electronics products for the last 4
 	
 #### Key Insight
 
-Satisfaction customer  rate zero in on to accumulative qualified transactions for loyal customer.
+Satisfaction customer rates zero in on to accumulative qualified transactions for loyal customer.
 The highly Returns customers  represented   87 %  rate based the overall customers.
 Customers satisfaction  appeared to be more  easily eroded, with  2 returns , potentially leading to churn.
 The young adult customers may require more attention,  making  it important to prioritise their higher returns and churn-
