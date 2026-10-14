@@ -783,7 +783,7 @@ win-back voucher,  a whist list - discount promo, and etc.
 
 XAMPP PHPMyadmin has file uploaded size limitation , hence I split the dataset into 4 parts.
 To run query , I created a  View table , named all_ext.
-I uploaded Tableau interactive visualization in format GIF to demonstrate practically dashboard.
+I uploaded Tableau interactive visualization in format GIF [View Interactive dashboard in Tableau](https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/Project_1.gif) to demonstrate practically dashboard.
 
 [Download - here : Tableau.twbx](https://drive.google.com/file/d/1UHshU--K6McJdePf94_ciB1p4U0CJX8s/view?usp=drive_link)
 
