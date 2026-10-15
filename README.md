@@ -726,7 +726,7 @@ SELECT
 	
 FROM all_ext	
 WHERE YEAR(Purchase_date) = 2023 AND MONTH(Purchase_date) >= 7	
-GROUP BY Product_Category	
+GROUP BY Customer_ID, Product_Category	
 ),	
 INTV AS(	
 SELECT	
@@ -751,13 +751,13 @@ ORDER BY of_Customers_last_60_days DESC;
 
 - Output :
 
-  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/P.9-SQL.png)
+  ![](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/P.9_new-SQL.png)
 
   
 ***Interpretation: ***
 
-From this table,  42  at-risk customers who potentially led to churn  in clothing category with 1 transaction  for the last 60 days recorded ( the maximum purchase date was on Sep 13 2023),
-and over  at-risk 45 customers  in books and electronics products for the last 45 days.
+From this table,  45  at-risk customers who potentially led to churn  in clothing category with 1 transaction  for the last 60 days recorded ( the maximum purchase date was on Sep 13 2023),
+and over  at-risk 50 customers  in books and electronics products for the last 45 days.
 
 
 
