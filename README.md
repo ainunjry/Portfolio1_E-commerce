@@ -63,7 +63,10 @@ using the original dataset.
   - [Download here :]
   - (https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/EDA_EXTRACT_1.ipynb)
 - XAMPP PhpMyAdmin - SQL - Data Analysis
+  - [Dowload here :]
+  - (https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/Script-1.sql)
 - Tableau - Visualization
+  - (https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/Project_1.gif))
 
 ### Business questions
    1. Which product category has the highest number of purchases?
@@ -759,7 +762,7 @@ ORDER BY of_Customers_last_60_days DESC;
 From this table,  45  at-risk customers who potentially led to churn  in clothing category with 1 transaction  for the last 60 days recorded ( the maximum purchase date was on Sep 13 2023),
 and over  at-risk 50 customers  in books and electronics products for the last 45 days.
 
-
+[SQL queries](https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/Script-1.sql)
 
 - [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#content)
 
