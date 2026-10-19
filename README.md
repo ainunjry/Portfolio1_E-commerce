@@ -60,13 +60,11 @@ using the original dataset.
 ### Tools
 
 - Google Colab - Data cleaning and Exploratory data analysis
-  - [Download here :]
-  - (https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/EDA_EXTRACT_1.ipynb)
+  - [Download here :](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/EDA_EXTRACT_1.ipynb)
 - XAMPP PhpMyAdmin - SQL - Data Analysis
-  - [Dowload here :]
-  - (https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/Script-1.sql)
+  - [Dowload here :](https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/Script-1.sql)
 - Tableau - Visualization
-  - (https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/Project_1.gif))
+  - [Dowload visualization :](https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/Project_1.gif))
 
 ### Business questions
    1. Which product category has the highest number of purchases?
