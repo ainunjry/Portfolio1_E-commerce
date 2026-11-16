@@ -60,7 +60,7 @@ using the original dataset.
 ### Tools
 
 - Google Colab - Data cleaning and Exploratory data analysis
-  - [Download here :](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/EDA_EXTRACT_1.ipynb)
+  - [Download here :](https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/EDA_EXTRACT_1.ipynb)
 - XAMPP PhpMyAdmin - SQL - Data Analysis
   - [Dowload here :](https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/Script-1.sql)
 - Tableau - Visualization
@@ -319,7 +319,7 @@ From  Box Plot Chart visualization for [Total Purchase Amount] columns : No outl
   They suggest that Product Price and Total Amount Purchase not linearly associated
   with Churn in this dataset.
 
-  [Click here to download ipynb format](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/EDA_EXTRACT_1.ipynb)
+  [Click here to download ipynb format](https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/EDA_EXTRACT_1.ipynb)
 
   - [Back to content](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/README.md#content)
 
@@ -708,7 +708,7 @@ Over 80% customers ever returned, were it not handled, unsatisfaction experience
 
 [View Tableau visualization-download here](https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/Tableau_E-Commerce%20.pdf)
 
-[View G-Colab-download here](https://github.com/ainunjry/Portfolio1_E-commerce/blob/main/EDA_EXTRACT_1.ipynb)
+[View G-Colab-download here](https://github.com/ainunjry/Tools-project-1_E-Commerce/blob/main/EDA_EXTRACT_1.ipynb)
 
 
 ***Business question 9:***
